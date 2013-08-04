@@ -29,8 +29,7 @@ describe Evrone::Common::Rack::Builder do
   it "should be work" do
     env = []
     app = ->(c){ c << 'run' }
-    builder.run app
-    rs = builder.call env
+    rs = builder.to_app(app).call env
     expect(rs).to eq %w{ first.begin last.begin run last.end first.end }
   end
 end

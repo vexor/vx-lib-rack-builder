@@ -2,7 +2,7 @@ module Evrone
   module Common
     module Rack
       class Builder
-        VERSION = "0.0.1"
+        VERSION = "0.0.2"
       end
     end
   end

@@ -41,26 +41,8 @@ module Evrone
           @use << proc { |app| middleware.new(app, *args, &block) }
         end
 
-        # Takes an argument that is an object that responds to #call and returns a Rack response.
-        # The simplest form of this is a lambda object:
-        #
-        #   run lambda { |env| [200, { "Content-Type" => "text/plain" }, ["OK"]] }
-        #
-        # However this could also be a class:
-        #
-        #   class Heartbeat
-        #     def self.call(env)
-        #      [200, { "Content-Type" => "text/plain" }, ["OK"]]
-        #    end
-        #   end
-        #
-        #   run Heartbeat
-        def run(app)
-          @run = app
-        end
-
-        def to_app
-          app = @run
+        def to_app(app)
+          app ||= @run
           fail "missing run or map statement" unless app
           @use.reverse.inject(app) { |a,e| e[a] }
         end
