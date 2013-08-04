@@ -1,4 +1,4 @@
 rvm:
   - 1.9.3
   - 2.0.0
-script: rake --color -fd --order=rand
+script: bundle exec rake spec SPEC_OPTS='--color -fd --order=rand'
