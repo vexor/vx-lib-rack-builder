@@ -1,4 +1,4 @@
-module Evrone
+module Vx
   module Common
     module Rack
       class Builder

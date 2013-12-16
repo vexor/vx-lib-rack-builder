@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'evrone/common/rack/builder/version'
+require 'vx/common/rack/builder/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "evrone-common-rack-builder"
-  spec.version       = Evrone::Common::Rack::Builder::VERSION
+  spec.name          = "vx-common-rack-builder"
+  spec.version       = Vx::Common::Rack::Builder::VERSION
   spec.authors       = ["Dmitry Galinsky"]
   spec.email         = ["dima.exe@gmail.com"]
   spec.description   = %q{ The Rack::Builder extracted from Rack }

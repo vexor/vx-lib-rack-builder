@@ -1,6 +1,6 @@
-require "evrone/common/rack/builder/version"
+require File.expand_path("../builder/version", __FILE__)
 
-module Evrone
+module Vx
   module Common
     module Rack
 

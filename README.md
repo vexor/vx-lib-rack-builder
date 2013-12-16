@@ -1,4 +1,4 @@
-# Evrone::Common::Rack::Builder
+# Vx::Common::Rack::Builder
 
 The Rack::Builder extracted from Rack
 
@@ -6,7 +6,7 @@ The Rack::Builder extracted from Rack
 
 Add this line to your application's Gemfile:
 
-    gem 'evrone-common-rack-builder'
+    gem 'vx-common-rack-builder'
 
 And then execute:
 
@@ -14,7 +14,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install evrone-common-rack-builder
+    $ gem install vx-common-rack-builder
 
 ## Usage
 
