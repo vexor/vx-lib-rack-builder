@@ -1,7 +1,7 @@
 require File.expand_path("../builder/version", __FILE__)
 
 module Vx
-  module Common
+  module Lib
     module Rack
 
       class Builder

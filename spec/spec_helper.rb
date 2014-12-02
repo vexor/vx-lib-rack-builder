@@ -1,2 +1,2 @@
 require 'rspec/autorun'
-require File.expand_path("../../lib/vx/common/rack/builder", __FILE__)
+require File.expand_path("../../lib/vx/lib/rack/builder", __FILE__)

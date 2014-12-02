@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Vx::Common::Rack::Builder do
+describe Vx::Lib::Rack::Builder do
   First = Struct.new(:app) do
     def call(env)
       env << 'first.begin'
